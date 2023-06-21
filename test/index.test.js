@@ -90,7 +90,6 @@ const constants = [
 ];
 
 const methods = [
-	'init',
 	'uniform1f','uniform2f','uniform3f','uniform4f',
 	'uniform1i','uniform2i','uniform3i','uniform4i',
 	'uniform1fv','uniform2fv','uniform3fv','uniform4fv',

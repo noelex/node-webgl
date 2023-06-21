@@ -7,21 +7,6 @@
 
 namespace webgl {
 
-
-DBG_EXPORT JS_METHOD(init) { NAPI_ENV;
-	glewExperimental = GL_TRUE;
-	
-	GLenum err = glewInit();
-	
-	if (GLEW_OK != err) {
-		std::cerr << "Error: " << glewGetErrorString(err) << std::endl;
-		JS_THROW("Can't initialize GLEW.");
-	}
-	
-	RET_UNDEFINED;
-}
-
-
 DBG_EXPORT JS_METHOD(clear) { NAPI_ENV;
 	REQ_INT32_ARG(0, target);
 	

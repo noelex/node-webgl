@@ -20,8 +20,6 @@
 
 
 Napi::Object initModule(Napi::Env env, Napi::Object exports) {
-	JS_GL_SET_METHOD(init);
-	
 	// Attrib
 	JS_GL_SET_METHOD(bindAttribLocation);
 	JS_GL_SET_METHOD(disableVertexAttribArray);

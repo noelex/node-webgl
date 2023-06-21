@@ -5,7 +5,9 @@
 .project
 .vscode
 node_modules/
-src/build/
+build/
 src/node_modules/
 bin-*/
 *.log
+Debug
+Release

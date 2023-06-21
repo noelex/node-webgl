@@ -1,7 +1,7 @@
 /* eslint-disable func-names */
 'use strict';
 
-const gl = require('../core');
+const gl = require('bindings')('webgl');
 
 module.exports = gl;
 

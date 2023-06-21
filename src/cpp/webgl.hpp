@@ -1,15 +1,11 @@
 #ifndef _WEBGL_HPP_
 #define _WEBGL_HPP_
 
-
-#include <addon-tools.hpp>
-
-#include <GL/glew.h>
+#include "addon-tools.hpp"
+#include <epoxy/gl.h>
 
 
 namespace webgl {
-	DBG_EXPORT JS_METHOD(init);
-	
 	// Attrib
 	DBG_EXPORT JS_METHOD(bindAttribLocation);
 	DBG_EXPORT JS_METHOD(disableVertexAttribArray);
